@@ -1,3 +1,4 @@
+/* Question 6: Category performance
 --DONE
 
 /* The Pricing Team wants to know each category performs according to their price.
