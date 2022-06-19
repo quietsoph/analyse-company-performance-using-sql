@@ -1,23 +1,5 @@
-/* Question 6: Category performance
---DONE
-
-/* The Pricing Team wants to know each category performs according to their price.
+/* Question 6: Category performance. The Pricing Team wants to know each category performs according to their price.
 */
---select c.category_name
---, case 
---	when p.unit_price < 20 then 'Below $20'
---	when p.unit_price between 20 and 50 then '$20-$50'
---	else 'Over $50'
---end price_range
---, round(sum((od.unit_price - od.discount)*od.quantity))
---, count(od.order_id)
---from categories c 
---inner join products p
---on c.category_id = p.category_id 
---inner join order_details od
---on p.product_id = od.product_id
---group by c.category_name
---order by 1 asc, 2 asc;
 
 with products_in_orders as
 /*create a temporary table getting all products with their orders, their initial unit price, current unit price
